@@ -1,0 +1,4 @@
+Student name: Casper van Genderingen
+Student number: 645568
+Student class: INF1B
+URL student GitHub repository: https://github.com/vanGenderingen/WebMarkupExam 
