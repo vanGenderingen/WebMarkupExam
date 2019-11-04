@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*declare colors*/
+
+:root
+{
+    --color1:#000000;
+    --color2:#444444;
+    --color3:#707070;
+    --color4:#AAAAAA;
+    --color5:#F5F5F5;
+    --color6:#FFFFFF;
+    --color7:#2629FB;
+}
+
+
+#title, #payoff{
+    text-align: center;
+}
+
+p{
+    font-family: "Be Vietnam", serif;
+}
+
+h1{
+    font-family: Impact, serif;
+    font-size: 50px;
+}
+
+
+/*navigation bar*/
+
+nav
+{
+    margin-top: 0;
+}
+
+#nav
+{
+    text-decoration: magenta;
+    text-align: center;
+    background-color: var(--color4);
+    width: auto;
+}
+
+li
+{
+    display: inline-block;
+    padding: 18px 20px;
+    font-weight: 600;
+    font-family: "Comic Sans MS";
+}
+
+li a{
+    text-decoration: none;
+    color: var(--color1);
+}
+
+
+#maincontent img{
+    float: right;
+}
