@@ -7,27 +7,24 @@
 
 :root
 {
+    /*black*/
     --color1:#000000;
+    /*Gray*/
     --color2:#444444;
+    /*Lightgray*/
     --color3:#707070;
+    /*Lightergray*/
     --color4:#AAAAAA;
+    /*Almost white*/
     --color5:#F5F5F5;
+    /*White*/
     --color6:#FFFFFF;
+    /*Blue*/
     --color7:#2629FB;
 }
 
-
-#title, #payoff{
-    text-align: center;
-}
-
-p{
-    font-family: "Be Vietnam", serif;
-}
-
-h1{
-    font-family: Impact, serif;
-    font-size: 50px;
+p {
+    font-family: "Comic Sans MS", serif;
 }
 
 
@@ -35,12 +32,15 @@ h1{
 
 nav
 {
-    margin-top: 0;
+    position: fixed;
+    top:  0%;
+    width: 100%;
+    z-index: 12;
 }
 
-#nav
+nav ul
 {
-    text-decoration: magenta;
+    text-decoration: none;
     text-align: center;
     background-color: var(--color4);
     width: auto;
@@ -54,12 +54,63 @@ li
     font-family: "Comic Sans MS";
 }
 
-li a{
+nav a li{
     text-decoration: none;
     color: var(--color1);
 }
 
+nav li:hover{
+    background-color: var(--color2);
+    color: var(--color3);
+}
+
+
+/*header*/
+#header-video video{
+    width: 100%;
+    top: 0;
+    z-index: 0;
+}
+
+#header-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 11;
+    text-align: center;
+}
+
+#header-content h1{
+    font-family: Impact, serif;
+    font-size: 50px;
+    color: var(--color6);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#header-content h2{
+    color: var(--color6);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+
+/*Maincontent*/
+
+#maincontent {
+    text-align: center;
+}
+
+#maincontent h2{
+    border: 1px black;
+    font-size: 5em;
+    background-color: var(--color3);
+}
+
+#maincontent p {
+    margin: 0 0 20px 0;
+}
 
 #maincontent img{
-    float: right;
+    width: 20%;
 }
+
