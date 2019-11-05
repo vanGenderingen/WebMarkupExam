@@ -4,7 +4,6 @@
 }
 
 /*declare colors*/
-
 :root
 {
     /*black*/
@@ -33,7 +32,7 @@ p {
 nav
 {
     position: fixed;
-    top:  0%;
+    top: 0;
     width: 100%;
     z-index: 12;
 }
@@ -68,6 +67,7 @@ nav li:hover{
 /*header*/
 #header-video video{
     width: 100%;
+    height: 100%;
     top: 0;
     z-index: 0;
 }
@@ -95,22 +95,105 @@ nav li:hover{
 
 
 /*Maincontent*/
+#maincontent{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin:  0 auto;
+    max-width: 56em;
+    padding: 1em 0;
+}
 
-#maincontent {
+#main header h2{
+    font-family: Impact, serif;
+    font-size: 10em;
+}
+
+#maincontent article h3{
+    font-size: 2em;
+}
+
+#main header{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 10vw;
+}
+
+#main header, #main footer{
+    grid-column: 1 / 5 ;
+}
+
+#maincontent article{
+    grid-column: 1 / 3;
+}
+
+#maincontent aside{
+    grid-column: span 2;
+}
+
+#maincontent aside img{
+    max-width: 75%;
+    display: block;
+    margin-left: auto;
+    padding: 1%;
+}
+
+#maincontent footer{
     text-align: center;
+    border: 1px black solid;
 }
 
-#maincontent h2{
-    border: 1px black;
-    font-size: 5em;
-    background-color: var(--color3);
+/*Secondary conent*/
+#secondary{
+    background-color: var(--color4);
+}
+#secondarycontent{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin:  0 auto;
+    max-width: 56em;
+    padding: 1em 0;
 }
 
-#maincontent p {
-    margin: 0 0 20px 0;
+#secondary header h2{
+    font-family: Impact, serif;
+    font-size: 8em;
 }
 
-#maincontent img{
-    width: 20%;
+#secondarycontent article h3{
+    font-size: 1.5em;
 }
+
+#secondary header{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 10vw;
+}
+
+#secondary header, #secondary footer{
+    grid-column: 1 / 5 ;
+}
+
+#secondarycontent article{
+    grid-column: 1 / 3;
+}
+
+#secondarycontent aside{
+    grid-column: span 2;
+}
+
+#secondarycontent aside img{
+    max-width: 75%;
+    display: block;
+    margin-left: auto;
+    padding: 1%;
+}
+
+#secondarycontent footer{
+    text-align: center;
+    border: 1px black solid;
+}
+
+
 
