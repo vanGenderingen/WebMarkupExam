@@ -346,6 +346,12 @@ nav li:hover{
 }
 
 /*Contact*/
+#contactcontent h2{
+    font-size: 6em;
+    font-family: Impact, "Arial", "Verdana", "sans-serif";
+
+}
+
 
 #contactcontent{
     text-align: center;
