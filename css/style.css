@@ -226,6 +226,10 @@ nav li:hover{
     margin: 0 auto;
 }
 
+#grid-sporten p {
+    font-size: 14px;
+}
+
 .grid-block{
     position: relative;
     border: black 1px solid;
